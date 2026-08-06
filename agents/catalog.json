@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "framework": "react",
+  "agents": [
+    {
+      "agent": "react-solution-architect",
+      "purpose": "Map requirements and approved design evidence to routes, components, state, and frontend task contracts.",
+      "writes_application_code": false,
+      "outputs": ["route map", "component map", "task contracts"]
+    },
+    {
+      "agent": "react-frontend-implementer",
+      "purpose": "Implement accessible requirement-backed React vertical slices inside the target monorepo.",
+      "writes_application_code": true,
+      "allowed_target_paths": ["apps/frontend/**", "packages/api-client/**", ".ai/evidence/**"],
+      "maximum_retries_per_failure": 2
+    },
+    {
+      "agent": "react-independent-verifier",
+      "purpose": "Independently verify types, behavior, accessibility, responsive layout, visuals, and production build.",
+      "writes_application_code": false,
+      "allowed_target_paths": [".ai/evidence/**", "artifacts/**"]
+    }
+  ]
+}

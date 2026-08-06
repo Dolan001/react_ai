@@ -1,0 +1,5 @@
+# React agent pack
+
+Code-free agents, skills, commands, hooks, and rules for generating or adopting a
+React frontend inside a target monorepo. This repository is never copied as an
+application scaffold.

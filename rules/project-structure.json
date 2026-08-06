@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "framework": "react",
+  "target_root": "apps/frontend",
+  "required_paths": [
+    "package.json",
+    "package-lock.json",
+    "tsconfig.json",
+    "vite.config.ts",
+    "eslint.config.js",
+    "playwright.config.ts",
+    "vitest.config.ts",
+    "index.html",
+    ".env.example",
+    "Dockerfile",
+    "README.md",
+    "public",
+    "src/main.tsx",
+    "src/app/App.tsx",
+    "src/app/router.tsx",
+    "src/app/providers.tsx",
+    "src/app/styles.css",
+    "src/routes/RootRoute.tsx",
+    "src/routes/NotFoundRoute.tsx",
+    "src/components/ui",
+    "src/components/shared",
+    "src/services/api-client.ts",
+    "src/services/errors.ts",
+    "src/lib/env.ts",
+    "tests/setup.ts",
+    "tests/e2e",
+    "scripts/validate_project.mjs"
+  ],
+  "feature_path_pattern": "src/features/<feature>",
+  "required_feature_paths": [
+    "components",
+    "hooks",
+    "schemas.ts",
+    "types.ts",
+    "tests"
+  ],
+  "forbidden_patterns": [
+    "backend business logic in browser code",
+    "unvalidated network response",
+    "secret in public environment value",
+    "unlabelled interactive control",
+    "application code copied from the behavior pack"
+  ]
+}
