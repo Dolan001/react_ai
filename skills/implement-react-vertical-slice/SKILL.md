@@ -10,3 +10,6 @@ access behind typed adapters with runtime validation. Cover loading, empty, erro
 validation, authorization, keyboard, and responsive behavior. Run focused format,
 lint, types, unit/component, build, and affected browser checks; stop for independent
 verification.
+
+Read `references/production-delivery.md` for design fidelity, state ownership, API,
+security, accessibility, performance, and browser verification rules.

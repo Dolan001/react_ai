@@ -9,3 +9,7 @@ Generate only declared structure paths. Resolve supported versions, enable stric
 TypeScript, establish routing, error boundaries, styling, runtime API validation,
 testing, environment validation, and production build checks. Keep global state
 minimal and create only shared primitives required by planned slices.
+
+Read `../../rules/project-structure.md` and
+`../implement-react-vertical-slice/references/production-delivery.md` before selecting
+routing, state, data, accessibility, security, or test boundaries.
