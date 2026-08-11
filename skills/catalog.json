@@ -1,30 +1,11 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "framework": "react",
+  "format": "markdown-first",
   "skills": [
-    {
-      "name": "inspect-react-target",
-      "inputs": ["PRD", "design evidence", "target inventory"],
-      "outputs": ["route map", "component map", "compatibility risks"],
-      "required_checks": ["read-only discovery", "existing-work preservation"]
-    },
-    {
-      "name": "create-react-monorepo-frontend",
-      "inputs": ["validated task contract", "approved design baseline", "rules/project-structure.json"],
-      "outputs": ["apps/frontend production structure"],
-      "required_checks": ["path lease", "strict TypeScript", "runtime API validation", "error boundaries"]
-    },
-    {
-      "name": "implement-react-vertical-slice",
-      "inputs": ["requirement IDs", "approved HTML", "typed API client"],
-      "outputs": ["route-to-interaction slice", "unit tests", "browser tests", "evidence"],
-      "required_checks": ["semantic UI", "keyboard behavior", "responsive layout", "failure states"]
-    },
-    {
-      "name": "verify-react-delivery",
-      "inputs": ["changed files", "task contract", "test manifest"],
-      "outputs": ["independent verification decision"],
-      "required_checks": ["format", "lint", "types", "unit", "build", "E2E", "axe", "visual"]
-    }
+    {"name": "inspect-react-target", "path": "skills/inspect-react-target/SKILL.md"},
+    {"name": "create-react-monorepo-frontend", "path": "skills/create-react-monorepo-frontend/SKILL.md"},
+    {"name": "implement-react-vertical-slice", "path": "skills/implement-react-vertical-slice/SKILL.md"},
+    {"name": "verify-react-delivery", "path": "skills/verify-react-delivery/SKILL.md"}
   ]
 }
