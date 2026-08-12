@@ -31,6 +31,12 @@
     "tests/e2e",
     "scripts/validate_project.mjs"
   ],
+  "required_directories": [
+    "public",
+    "src/components/ui",
+    "src/components/shared",
+    "tests/e2e"
+  ],
   "feature_path_pattern": "src/features/<feature>",
   "required_feature_paths": [
     "components",
