@@ -63,6 +63,9 @@ Ownership:
 - `src/services`: typed network boundaries and standard client errors.
 - `src/lib`: validated environment access and framework-neutral utilities.
 - shared API types/client are generated under target `packages/` when required.
+- Realtime features activate one typed `src/realtime` client plus unit/browser tests. It owns
+  connection lifecycle, backoff, cursor resync, gap detection, deduplication, bounded queues, and
+  degraded state; feature hooks consume it rather than opening component sockets.
 
 Generation order:
 

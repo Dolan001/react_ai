@@ -6,6 +6,7 @@
     {"name": "inspect-react-target", "path": "skills/inspect-react-target/SKILL.md"},
     {"name": "create-react-monorepo-frontend", "path": "skills/create-react-monorepo-frontend/SKILL.md"},
     {"name": "implement-react-vertical-slice", "path": "skills/implement-react-vertical-slice/SKILL.md"},
+    {"name": "implement-react-realtime", "path": "skills/implement-react-realtime/SKILL.md"},
     {"name": "verify-react-delivery", "path": "skills/verify-react-delivery/SKILL.md"}
   ]
 }

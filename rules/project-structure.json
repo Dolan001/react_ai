@@ -37,6 +37,21 @@
     "src/components/shared",
     "tests/e2e"
   ],
+  "conditional_path_groups": [
+    {
+      "name": "realtime",
+      "trigger_globs": ["src/realtime/client.ts", "src/features/*/hooks/useRealtime.ts"],
+      "required_paths": ["src/realtime/client.ts", "src/realtime/events.ts", "src/realtime/state.ts", "src/realtime/client.test.ts", "tests/e2e/realtime.spec.ts"],
+      "required_directories": [],
+      "required_source_patterns": [
+        {"id": "realtime-websocket-client", "globs": ["src/realtime/client.ts"], "pattern": "WebSocket", "ignore_case": false, "message": "React realtime requires a centralized WebSocket client."},
+        {"id": "realtime-environment", "globs": [".env.example"], "pattern": "^VITE_REALTIME_WS_URL=", "ignore_case": false, "message": "The example environment must declare the realtime endpoint."}
+      ]
+    }
+  ],
+  "source_rules": [
+    {"id": "no-reusable-token-in-websocket-url", "globs": ["src/**/*.ts", "src/**/*.tsx"], "pattern": "(?:access_?token|jwt|bearer)=", "ignore_case": true, "scan_strings": true, "message": "Do not place reusable credentials in WebSocket URLs."}
+  ],
   "feature_path_pattern": "src/features/<feature>",
   "required_feature_paths": [
     "components",
