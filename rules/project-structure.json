@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "framework": "react",
   "target_root": "apps/frontend",
   "required_paths": [
@@ -53,6 +53,16 @@
     {"id": "no-reusable-token-in-websocket-url", "globs": ["src/**/*.ts", "src/**/*.tsx"], "pattern": "(?:access_?token|jwt|bearer)=", "ignore_case": true, "scan_strings": true, "message": "Do not place reusable credentials in WebSocket URLs."}
   ],
   "feature_path_pattern": "src/features/<feature>",
+  "module_path_pattern": "src/features/<module>",
+  "module_naming": {
+    "style": "kebab-case",
+    "ambiguous_names": ["identity", "work", "operations", "data-management", "management", "collaboration"],
+    "familiar_fallback_names": ["accounts", "authentication", "users", "notifications", "articles", "blog", "posts", "tasks", "todos", "webhooks", "chat", "files", "attachments", "payments", "orders", "products", "reports"],
+    "responsibility_packages": [],
+    "max_lines": [
+      {"globs": ["*.tsx", "components/*.tsx", "hooks/*.ts", "hooks/*.tsx", "api/*.ts"], "maximum": 250}
+    ]
+  },
   "required_feature_paths": [
     "components",
     "hooks",

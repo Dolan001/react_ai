@@ -8,6 +8,8 @@ description: Independently verify changed React slices or frontend delivery agai
 Inspect the diff and run format, lint, types, affected units, production build, browser
 journeys, accessibility, responsive, and localized visual checks. Verify runtime API
 validation and required states. Capture evidence; do not edit source.
+Independently validate feature/route names against the PRD/fallback policy, responsibility-based
+filenames, compositional routes, cohesive ownership, and the 250-line split limit.
 
 Reuse a passing shared full-matrix report only when its revision and workspace inputs
 still match, then run focused changed-slice checks. Do not rerun the entire browser and
