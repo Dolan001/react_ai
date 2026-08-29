@@ -57,7 +57,7 @@
   "module_naming": {
     "style": "kebab-case",
     "ambiguous_names": ["identity", "work", "operations", "data-management", "management", "collaboration"],
-    "familiar_fallback_names": ["accounts", "authentication", "users", "notifications", "articles", "blog", "posts", "tasks", "todos", "webhooks", "chat", "files", "attachments", "payments", "orders", "products", "reports"],
+    "familiar_fallback_names": ["accounts", "authentications", "users", "notifications", "articles", "blog", "posts", "tasks", "todos", "webhooks", "chat", "files", "attachments", "payments", "orders", "products", "reports"],
     "responsibility_packages": [],
     "max_lines": [
       {"globs": ["*.tsx", "components/*.tsx", "hooks/*.ts", "hooks/*.tsx", "api/*.ts"], "maximum": 250}

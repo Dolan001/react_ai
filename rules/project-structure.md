@@ -71,11 +71,11 @@ Naming and growth rules:
 
 - Create a feature map from PRD journeys, screens, entities, and API resources before files. Keep
   exact, understandable PRD product terms. If a capability is unnamed, use familiar names such as
-  `authentication`, `accounts`, `notifications`, `articles`, `tasks`, `webhooks`, or `chat`.
+  `authentications`, `accounts`, `notifications`, `articles`, `tasks`, `webhooks`, or `chat`.
 - Do not invent vague features or routes such as `identity`, `work`, `operations`,
   `data-management`, `management`, or `collaboration` unless the PRD intentionally uses that term.
 - Use kebab-case feature directories and responsibility-based PascalCase components: for example,
-  `features/authentication/components/SignInForm.tsx` and `routes/TasksRoute.tsx`. Avoid
+  `features/authentications/components/SignInForm.tsx` and `routes/TasksRoute.tsx`. Avoid
   `DataComponent`, `MainView`, `Helper`, catch-all `index.tsx` implementations, and numbered names.
 - Route files compose feature screens; they do not contain a whole feature. Split components,
   hooks, API adapters, schemas, state, and tests by behavior. Keep route/feature source files at
